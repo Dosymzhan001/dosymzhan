@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Досымжан Олжабай</title>
+<meta name="description" content="Zerdeli Online Academy: Олимпиадалық академия, Зерделі Ұрпақ, Бастау">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800;900&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+/* VOICE official and calm, the Zerdeli brand without the poster effects
+   IDEA a printed school contact card: blue field, clean white cards, one gold accent
+   PICTURE the brand blue glow behind a large name and the role, logos on the cards
+   COLOUR blue #1430C9 to #071660, flat gold #FFD21F accent; project heads: blue, indigo, forest
+   TYPE Montserrat 800 for headings, Inter for text
+   LAYOUT phone: name, role, actions, figures, three cards, contacts; laptop: cards in three columns */
+:root{color-scheme:dark;--deep:#071660;--ink:#0A1550;--gold:#FFD21F;--line:rgba(255,255,255,.14);--glass:rgba(255,255,255,.07);--soft:#C3CEF5}
+*{box-sizing:border-box;min-width:0}
+html{-webkit-text-size-adjust:100%;background:var(--deep)}
+body{margin:0;color:#fff;font:16px/1.55 Inter,"Segoe UI",Roboto,Arial,sans-serif;overflow-x:clip;background:radial-gradient(110% 55% at 80% 0%,#2457E6 0%,#1430C9 35%,#0D2290 65%,#071660 100%) no-repeat,var(--deep)}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{position:relative;max-width:1120px;margin:0 auto;padding-left:max(18px,env(safe-area-inset-left));padding-right:max(18px,env(safe-area-inset-right))}
+
+header{position:relative;padding-top:max(16px,env(safe-area-inset-top));padding-bottom:6px}
+.top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.logo{width:146px}
+.lang{display:flex;border:1px solid var(--line);border-radius:12px;padding:3px}
+.lang button{font:600 14px Inter,sans-serif;color:var(--soft);background:none;border:0;border-radius:9px;min-width:50px;height:36px;cursor:pointer}
+.lang button[aria-pressed=true]{background:#fff;color:var(--ink)}
+.lang button:focus-visible,.cta:focus-visible,.btn:focus-visible,.row:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.who{margin-top:36px;max-width:700px}
+.role{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.badge{font:700 14px Montserrat,sans-serif;color:var(--ink);background:var(--gold);border-radius:8px;padding:6px 12px}
+.badge.o{background:none;color:#fff;border:1px solid rgba(255,255,255,.35)}
+h1{margin:16px 0 0;font:800 clamp(32px,8.6vw,58px)/1.05 Montserrat,sans-serif;letter-spacing:-.02em;text-wrap:balance}
+.org{margin:12px 0 0;font-weight:600;font-size:16px;color:#fff}
+.lead{margin:8px 0 0;color:var(--soft);font-size:16px;max-width:34em}
+.acts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:24px;max-width:560px}
+.cta{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;min-height:74px;border-radius:14px;background:var(--glass);border:1px solid var(--line);color:#fff;text-decoration:none;font-weight:600;font-size:14px;transition:background .15s}
+.cta:hover{background:rgba(255,255,255,.12)}
+.cta svg{width:22px;height:22px}
+.cta.wa{background:var(--gold);color:var(--ink);border-color:var(--gold)}
+
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin-top:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stat{padding:16px 12px 16px 0}
+.stat+.stat{padding-left:14px;border-left:1px solid var(--line)}
+.stat b{display:block;font:800 clamp(22px,6vw,32px)/1 Montserrat,sans-serif;color:var(--gold);white-space:nowrap}
+.stat span{display:block;margin-top:6px;font-size:13px;line-height:1.35;color:var(--soft)}
+
+.sec{position:relative;padding-top:44px}
+h2{margin:0 0 6px;font:800 clamp(26px,6.6vw,38px)/1.1 Montserrat,sans-serif;letter-spacing:-.02em}
+.sub{margin:0 0 22px;color:var(--soft)}
+
+.cards{display:grid;gap:16px}
+@media(min-width:880px){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.card{display:flex;flex-direction:column;background:#fff;color:var(--ink);border-radius:20px;overflow:hidden;box-shadow:0 14px 34px rgba(0,0,40,.28);scroll-margin-top:16px}
+.head{position:relative;padding:20px 22px;background:var(--h);color:#fff;min-height:160px}
+.head .num{position:absolute;right:18px;top:18px;font:700 13px Montserrat,sans-serif;color:rgba(255,255,255,.6)}
+.cls{display:inline-block;font:700 13px Montserrat,sans-serif;color:var(--ink);background:var(--gold);border-radius:7px;padding:4px 10px}
+.head h3{margin:14px 0 0;font:800 24px/1.1 Montserrat,sans-serif;letter-spacing:-.01em}
+.head p{margin:8px 0 0;font-size:15px;color:rgba(255,255,255,.85)}
+.k1{--h:#1F4FD8}
+.k2{--h:#0D1E73}
+.k3{--h:#0A3929}
+.urpaq{width:170px;margin-top:10px}
+.bastau{margin-top:12px;font:800 38px/1 Montserrat,sans-serif;letter-spacing:.01em;color:var(--gold)}
+.body{display:flex;flex-direction:column;flex:1;padding:18px 22px 22px}
+.body ul{list-style:none;margin:0 0 20px;padding:0;display:grid;gap:10px;flex:1;align-content:start}
+.body li{display:grid;grid-template-columns:20px minmax(0,1fr);gap:10px;font-size:15px;line-height:1.45}
+.body li svg{width:20px;height:20px;margin-top:1px;color:var(--h)}
+.note{margin:-6px 0 18px;padding:10px 12px;border-left:3px solid var(--gold);background:#FFF8DC;color:#5C4300;font-weight:600;font-size:14px;border-radius:0 10px 10px 0}
+.nums{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;margin:0 0 12px;background:#E3E8F7;border:1px solid #E3E8F7;border-radius:14px;overflow:hidden}
+.nums div{background:#F5F7FD;padding:12px 10px;text-align:center}
+.nums .w{grid-column:1/-1}
+.nums .w b{font-size:30px}
+.nums b{display:block;font:800 24px/1 Montserrat,sans-serif;color:var(--h);white-space:nowrap}
+.nums span{display:block;margin-top:5px;font-size:13px;line-height:1.3;color:#4A5478}
+.lng{display:flex;align-items:center;gap:8px;margin:0 0 18px;font-size:14px;font-weight:600;color:var(--ink)}
+.lng i{font-style:normal;font:700 12px Montserrat,sans-serif;color:#fff;background:var(--h);border-radius:6px;padding:3px 7px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;min-height:52px;border-radius:12px;text-decoration:none;font:700 16px Montserrat,sans-serif;color:#fff;background:var(--h);transition:filter .15s}
+.btn:hover{filter:brightness(1.12)}
+.btn svg{width:20px;height:20px}
+
+.contact{display:grid;gap:10px}
+@media(min-width:720px){.contact{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.row{display:grid;grid-template-columns:46px minmax(0,1fr) 20px;align-items:center;gap:14px;border-radius:16px;padding:12px 14px;text-decoration:none;min-height:72px;background:var(--glass);border:1px solid var(--line)}
+.row:hover{background:rgba(255,255,255,.12)}
+.ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;background:#fff;color:#1430C9}
+.ic svg{width:22px;height:22px}
+.ic.w{background:#25D366;color:#fff}
+.row small{display:block;color:var(--soft);font-size:13px}
+.row b{display:block;font-size:16px;font-weight:600;overflow-wrap:anywhere}
+.go{width:20px;height:20px;color:#8FA6FF}
+
+footer{margin-top:50px;padding:28px 0 max(28px,env(safe-area-inset-bottom));border-top:1px solid var(--line);background:rgba(4,12,60,.5)}
+footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+footer img{width:126px}
+.motto{font:700 16px Montserrat,sans-serif;color:var(--gold)}
+@media(prefers-reduced-motion:reduce){.cta,.btn{transition:none}}
+@media(max-width:380px){.acts{gap:8px}.cta{font-size:13px}.stat span{font-size:12px}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.2-.2-.4-.3Z"/></symbol>
+  <symbol id="i-ph" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M5 3h3.5l1.7 4.3-2.2 1.4a11 11 0 0 0 5.3 5.3l1.4-2.2L19 13.5V17a2 2 0 0 1-2.2 2A15.5 15.5 0 0 1 3 5.2 2 2 0 0 1 5 3Z"/></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/></g><circle cx="17.4" cy="6.6" r="1.2" fill="currentColor"/></symbol>
+  <symbol id="i-web" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></g></symbol>
+  <symbol id="i-ok" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor" opacity=".14"/><path fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" d="m7.5 12.3 3 3 6-6.3"/></symbol>
+  <symbol id="i-go" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="m9 5 7 7-7 7"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5l3.1 6.6 7.2.9-5.3 5 1.4 7.1L12 17.6 5.6 21.1 7 14 1.7 9l7.2-.9z"/></symbol>
+</svg>
+
+<header class="wrap">
+  <div class="top">
+    <img class="logo" src="academy-logo.png" alt="Zerdeli Online Academy">
+    <div class="lang" role="group" aria-label="Тіл / Язык">
+      <button type="button" id="btn-kz" data-set="kz" aria-pressed="true">Қаз</button>
+      <button type="button" id="btn-ru" data-set="ru" aria-pressed="false">Рус</button>
+    </div>
+  </div>
+
+  <div class="who">
+    <div class="role"><span class="badge">Әдіскер</span><span class="badge o">Методист</span></div>
+    <h1>Олжабай Досымжан Мадиұлы</h1>
+    <p class="org" data-kz="Zerdeli Online Academy, оқу бөлімінің әдіскері" data-ru="Методист учебного отдела Zerdeli Online Academy">Zerdeli Online Academy, оқу бөлімінің әдіскері</p>
+    <p class="lead" data-kz="Балаңызға сай бағдарламаны таңдауға көмектесемін." data-ru="Помогу выбрать программу, которая подойдёт вашему ребёнку.">Балаңызға сай бағдарламаны таңдауға көмектесемін.</p>
+  </div>
+
+  <nav class="acts" aria-label="Байланыс">
+    <a class="cta wa" href="https://wa.me/message/F3N6SRDQG47FK1" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg>WhatsApp</a>
+    <a class="cta" href="tel:+77756911845"><svg><use href="#i-ph"/></svg><span data-kz="Қоңырау" data-ru="Позвонить">Қоңырау</span></a>
+    <a class="cta" href="https://www.instagram.com/zerdeli.online.academy/" target="_blank" rel="noopener"><svg><use href="#i-ig"/></svg>Instagram</a>
+  </nav>
+</header>
+
+<main class="wrap">
+  <section class="sec" aria-labelledby="h-proj">
+    <h2 id="h-proj"><span data-kz="Біздің" data-ru="Наши">Біздің</span> <span data-kz="жобалар" data-ru="проекты">жобалар</span></h2>
+    <p class="sub" data-kz="Математика және пәндер олимпиадаларына дайындық, 2–5 сынып" data-ru="Подготовка к олимпиадам по математике и предметам, 2–5 классы">Математика және пәндер олимпиадаларына дайындық, 2–5 сынып</p>
+
+    <div class="cards">
+      <article class="card k1" id="akademia">
+        <div class="head">
+          <span class="num">I</span>
+          <span class="cls" data-kz="3–5 сынып" data-ru="3–5 класс">3–5 сынып</span>
+          <h3 data-kz="Олимпиадалық академия" data-ru="Олимпиадная академия">Олимпиадалық академия</h3>
+          <p data-kz="Математикадан олимпиадаға 9 айлық жүйелі дайындық" data-ru="9 месяцев системной подготовки к олимпиадам по математике">Математикадан олимпиадаға 9 айлық жүйелі дайындық</p>
+        </div>
+        <div class="body">
+          <div class="nums">
+            <div class="w"><b>481</b><span data-kz="оқушы" data-ru="ученик">оқушы</span></div>
+            <div><b>42</b><span data-kz="қазақ тобы" data-ru="казахских групп">қазақ тобы</span></div>
+            <div><b>9</b><span data-kz="орыс тобы" data-ru="русских групп">орыс тобы</span></div>
+          </div>
+          <p class="lng"><i>ҚАЗ / РУС</i><span data-kz="Екі тілде оқыту" data-ru="Обучение на двух языках">Екі тілде оқыту</span></p>
+          <ul>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Іріктеу екі кезеңде: онлайн және офлайн" data-ru="Отбор в два этапа: онлайн и офлайн">Іріктеу екі кезеңде: онлайн және офлайн</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Аптасына 3 рет, 60 минуттан, тікелей эфир" data-ru="3 раза в неделю по 60 минут, прямой эфир">Аптасына 3 рет, 60 минуттан, тікелей эфир</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Топта 12 оқушыға дейін" data-ru="До 12 учеников в группе">Топта 12 оқушыға дейін</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Финалдық кезең Астана қаласында" data-ru="Финальный этап в Астане">Финалдық кезең Астана қаласында</span></li>
+          </ul>
+          <a class="btn" href="https://wa.me/message/F3N6SRDQG47FK1" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-kz="Жазылу" data-ru="Записаться">Жазылу</span></a>
+        </div>
+      </article>
+
+      <article class="card k2" id="urpaq">
+        <div class="head">
+          <span class="num">II</span>
+          <span class="cls" data-kz="3–4 сынып" data-ru="3–4 класс">3–4 сынып</span>
+          <img class="urpaq" src="urpaq-logo.png" alt="Зерделі Ұрпақ">
+          <p data-kz="Республикалық пәндер олимпиадасының облыстық кезеңіне интенсив" data-ru="Интенсив к областному этапу республиканской предметной олимпиады">Республикалық пәндер олимпиадасының облыстық кезеңіне интенсив</p>
+        </div>
+        <div class="body">
+          <div class="nums">
+            <div class="w"><b>1 227</b><span data-kz="оқушы" data-ru="учеников">оқушы</span></div>
+            <div class="w"><b>126</b><span data-kz="топ" data-ru="групп">топ</span></div>
+          </div>
+          <p class="lng"><i>ҚАЗ / РУС</i><span data-kz="Екі тілде оқыту" data-ru="Обучение на двух языках">Екі тілде оқыту</span></p>
+          <ul>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="3 сынып: математика. 4 сынып: математика, оқу сауаттылығы, жаратылыстану" data-ru="3 класс: математика. 4 класс: математика, грамотность чтения, естествознание">3 сынып: математика. 4 сынып: математика, оқу сауаттылығы, жаратылыстану</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Zerdeli App-та видеосабақ пен үй жұмысы" data-ru="Видеоуроки и домашние задания в Zerdeli App">Zerdeli App-та видеосабақ пен үй жұмысы</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Апта сайын тренермен онлайн сабақ" data-ru="Каждую неделю онлайн-урок с тренером">Апта сайын тренермен онлайн сабақ</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Куратор 09:00–21:00 байланыста" data-ru="Куратор на связи с 09:00 до 21:00">Куратор 09:00–21:00 байланыста</span></li>
+          </ul>
+          <a class="btn" href="https://wa.me/message/F3N6SRDQG47FK1" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-kz="Жазылу" data-ru="Записаться">Жазылу</span></a>
+        </div>
+      </article>
+
+      <article class="card k3" id="bastau">
+        <div class="head">
+          <span class="num">III</span>
+          <span class="cls" data-kz="2–4 сынып" data-ru="2–4 класс">2–4 сынып</span>
+          <div class="bastau">БАСТАУ</div>
+          <p data-kz="Республикалық математикалық олимпиадаға дайындық курсы" data-ru="Курс подготовки к республиканской математической олимпиаде">Республикалық математикалық олимпиадаға дайындық курсы</p>
+        </div>
+        <div class="body">
+          <ul>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="14 желтоқсан – 20 қаңтар" data-ru="14 декабря – 20 января">14 желтоқсан – 20 қаңтар</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Аптасына 3 рет, 60 минуттан, Microsoft Teams" data-ru="3 раза в неделю по 60 минут, Microsoft Teams">Аптасына 3 рет, 60 минуттан, Microsoft Teams</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Кешкі топтар, топта 10–12 оқушы" data-ru="Вечерние группы, 10–12 учеников">Кешкі топтар, топта 10–12 оқушы</span></li>
+            <li><svg><use href="#i-ok"/></svg><span data-kz="Әр топта жеке тренер мен куратор" data-ru="В каждой группе свой тренер и куратор">Әр топта жеке тренер мен куратор</span></li>
+          </ul>
+          <a class="btn" href="https://wa.me/message/F3N6SRDQG47FK1" target="_blank" rel="noopener"><svg><use href="#i-wa"/></svg><span data-kz="Жазылу" data-ru="Записаться">Жазылу</span></a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="h-con">
+    <h2 id="h-con"><span data-kz="Бізбен" data-ru="Свяжитесь">Бізбен</span> <span data-kz="байланыс" data-ru="с нами">байланыс</span></h2>
+    <p class="sub" data-kz="Сұрағыңыз болса, жазыңыз немесе қоңырау шалыңыз" data-ru="Есть вопросы? Пишите или звоните">Сұрағыңыз болса, жазыңыз немесе қоңырау шалыңыз</p>
+    <div class="panel contact">
+      <a class="row" href="https://wa.me/message/F3N6SRDQG47FK1" target="_blank" rel="noopener"><span class="ic w"><svg><use href="#i-wa"/></svg></span><span><small>WhatsApp</small><b data-kz="WhatsApp-қа жазу" data-ru="Написать в WhatsApp">WhatsApp-қа жазу</b></span><svg class="go"><use href="#i-go"/></svg></a>
+      <a class="row" href="tel:+77756911845"><span class="ic"><svg><use href="#i-ph"/></svg></span><span><small data-kz="Телефон" data-ru="Телефон">Телефон</small><b>+7 775 691 18 45</b></span><svg class="go"><use href="#i-go"/></svg></a>
+      <a class="row" href="https://www.instagram.com/zerdeli.online.academy/" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-ig"/></svg></span><span><small>Instagram</small><b>@zerdeli.online.academy</b></span><svg class="go"><use href="#i-go"/></svg></a>
+      <a class="row" href="https://zerdeli.app" target="_blank" rel="noopener"><span class="ic"><svg><use href="#i-web"/></svg></span><span><small data-kz="Оқу платформасы" data-ru="Учебная платформа">Оқу платформасы</small><b>zerdeli.app</b></span><svg class="go"><use href="#i-go"/></svg></a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img src="academy-logo.png" alt="Zerdeli Online Academy">
+    <span class="motto" data-kz="Зерделі – мүмкіндіктер мекені" data-ru="Зерделі – мүмкіндіктер мекені">Зерделі – мүмкіндіктер мекені</span>
+  </div>
+</footer>
+
+<script>
+{
+  function setLang(l) {
+    document.documentElement.lang = l === 'ru' ? 'ru' : 'kk';
+    document.querySelectorAll('[data-' + l + ']').forEach(el => { el.textContent = el.dataset[l]; });
+    document.querySelectorAll('.lang button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.set === l)));
+    try { localStorage.setItem('zoa-lang', l); } catch (e) {}
+  }
+  document.querySelectorAll('.lang button').forEach(b => b.addEventListener('click', () => setLang(b.dataset.set)));
+  let start = 'kz';
+  try { start = localStorage.getItem('zoa-lang') || 'kz'; } catch (e) {}
+  if (location.hash === '#ru') start = 'ru';
+  if (location.hash === '#kz') start = 'kz';
+  setLang(start === 'ru' ? 'ru' : 'kz');
+}
+</script>
+</body>
+</html>
